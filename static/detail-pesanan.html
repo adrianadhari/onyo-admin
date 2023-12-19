@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
-    <title>ONYO | Tambah Mobil</title>
+    <title>ONYO | Detail Pesanan</title>
     <link href="css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -30,14 +30,14 @@
                         </a>
                     </li>
 
-                    <li class="sidebar-item">
+                    <li class="sidebar-item active">
                         <a class="sidebar-link" href="kelola-pesanan.html">
                             <i class="align-middle" data-feather="shopping-cart"></i> <span class="align-middle">Kelola
                                 Pesanan</span>
                         </a>
                     </li>
 
-                    <li class="sidebar-item active">
+                    <li class="sidebar-item">
                         <a class="sidebar-link" href="kelola-mobil.html">
                             <i class="align-middle" data-feather="truck"></i> <span class="align-middle">Kelola
                                 Mobil</span>
@@ -88,61 +88,67 @@
 
             <main class="content">
                 <div class="container-fluid p-0">
-                    <h1 class="h3 mb-3">Edit Mobil</h1>
-                    <form action="#" method="POST" enctype="multipart/form-data">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="mb-3">
-                                    <label for="nama_mobil" class="form-label">Nama Mobil</label>
-                                    <input type="text" class="form-control" id="nama_mobil" value="Toyota Innova">
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mb-3">
-                                    <label for="tipe_mobil" class="form-label">Tipe Mobil</label>
-                                    <input type="text" class="form-control" id="tipe_mobil" value="SUV">
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mb-3">
-                                    <label for="harga_mobil" class="form-label">Harga Sewa Mobil</label>
-                                    <input type="text" class="form-control" id="harga_mobil" value="600000">
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mb-3">
-                                    <label for="jumlah_kursi" class="form-label">Jumlah Kursi</label>
-                                    <input type="text" class="form-control" id="jumlah_kursi" value="7">
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mb-3">
-                                    <label for="bahan_bakar" class="form-label">Bahan Bakar</label>
-                                    <input type="text" class="form-control" id="bahan_bakar" value="Bensin">
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mb-3">
-                                    <label for="jenisTransmisi" class="form-label">Jenis Transmisi</label>
-                                    <input type="text" class="form-control" id="jenisTransmisi" value="Matic">
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mb-5">
-                                    <label for="fotoMobil" class="form-label">Foto Mobil</label>
-                                    <input type="file" class="form-control" id="fotoMobil">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <button type="submit" class="btn btn-primary w-100">Tambah</button>
-                            </div>
-                            <div class="col-lg-3">
-                                <button type="reset" class="btn btn-secondary w-100">Batal</button>
+                    <h1 class="h3 mb-3">Detail Pesanan</h1>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover bg-white">
+                                    <tr>
+                                        <th>Kode Sewa</th>
+                                        <td>: TCD0E213</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mobil</th>
+                                        <td>: Honda Brio</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tanggal Mulai</th>
+                                        <td>: 29/11/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tanggal Selesai</th>
+                                        <td>: 29/11/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Durasi</th>
+                                        <td>: 1 Hari</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Metode Sewa</th>
+                                        <td>: Pakai Sopir</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Nama Penyewa</th>
+                                        <td>: Anis Sulala</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Biaya Driver</th>
+                                        <td>: Rp 85.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Biaya Mobil</th>
+                                        <td>: Rp 600.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total Biaya</th>
+                                        <td>: Rp 685.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Status</th>
+                                        <td>: Sukses</td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
-                    </form>
+                        <div class="col-lg-6">
+                            <img src="../src/img/buktipembayaran.png">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-2">
+                            <a href="kelola-pesanan.html" class="btn btn-primary w-100 fw-bold">Kembali</a>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>

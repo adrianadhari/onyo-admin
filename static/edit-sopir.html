@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
-    <title>ONYO | Tambah Mobil</title>
+    <title>ONYO | Edit Sopir</title>
     <link href="css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -37,14 +37,14 @@
                         </a>
                     </li>
 
-                    <li class="sidebar-item active">
+                    <li class="sidebar-item">
                         <a class="sidebar-link" href="kelola-mobil.html">
                             <i class="align-middle" data-feather="truck"></i> <span class="align-middle">Kelola
                                 Mobil</span>
                         </a>
                     </li>
 
-                    <li class="sidebar-item">
+                    <li class="sidebar-item active">
                         <a class="sidebar-link" href="kelola-sopir.html">
                             <i class="align-middle" data-feather="user"></i> <span class="align-middle">Kelola
                                 Sopir</span>
@@ -88,57 +88,55 @@
 
             <main class="content">
                 <div class="container-fluid p-0">
-                    <h1 class="h3 mb-3">Edit Mobil</h1>
+                    <h1 class="h3 mb-3">Edit Sopir</h1>
                     <form action="#" method="POST" enctype="multipart/form-data">
                         <div class="row">
-                            <div class="col-lg-5">
+                            <div class="col-lg-4">
                                 <div class="mb-3">
-                                    <label for="nama_mobil" class="form-label">Nama Mobil</label>
-                                    <input type="text" class="form-control" id="nama_mobil" value="Toyota Innova">
+                                    <label for="nama" class="form-label">Nama</label>
+                                    <input type="text" class="form-control" id="nama" value="Muhammad Firly">
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-4">
                                 <div class="mb-3">
-                                    <label for="tipe_mobil" class="form-label">Tipe Mobil</label>
-                                    <input type="text" class="form-control" id="tipe_mobil" value="SUV">
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mb-3">
-                                    <label for="harga_mobil" class="form-label">Harga Sewa Mobil</label>
-                                    <input type="text" class="form-control" id="harga_mobil" value="600000">
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mb-3">
-                                    <label for="jumlah_kursi" class="form-label">Jumlah Kursi</label>
-                                    <input type="text" class="form-control" id="jumlah_kursi" value="7">
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mb-3">
-                                    <label for="bahan_bakar" class="form-label">Bahan Bakar</label>
-                                    <input type="text" class="form-control" id="bahan_bakar" value="Bensin">
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mb-3">
-                                    <label for="jenisTransmisi" class="form-label">Jenis Transmisi</label>
-                                    <input type="text" class="form-control" id="jenisTransmisi" value="Matic">
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mb-5">
-                                    <label for="fotoMobil" class="form-label">Foto Mobil</label>
-                                    <input type="file" class="form-control" id="fotoMobil">
+                                    <label for="umur" class="form-label">Umur</label>
+                                    <input type="text" class="form-control" id="umur" value="21">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="pengalaman" class="form-label">Pengalaman Berkendara</label>
+                                    <input type="text" class="form-control" id="pengalaman" value="5 Tahun">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="keahlian" class="form-label">Keahlian Berkendara</label>
+                                    <input type="text" class="form-control" id="keahlian" value="Manual Matic">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="fotoSIM" class="form-label">Foto SIM</label>
+                                    <input type="file" class="form-control" id="fotoSIM">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label for="fotoKTP" class="form-label">Foto KTP</label>
+                                    <input type="file" class="form-control" id="fotoKTP">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-lg-2">
                                 <button type="submit" class="btn btn-primary w-100">Tambah</button>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-2">
                                 <button type="reset" class="btn btn-secondary w-100">Batal</button>
                             </div>
                         </div>
